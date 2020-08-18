@@ -1,0 +1,55 @@
+{
+    "name": "codicastudio/avatar",
+    "description": "A noobs worthless garbage, just learning.",
+    "keywords": [
+        "worthless garabage by a noob."
+    ],
+    "homepage": "https://github.com/codicastudio/avatar",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael J Brown",
+            "email": "codicastudiodev@gmail.com",
+            "homepage": "https://codicastudio.dev",
+            "role": "Developer"
+        }
+    ],
+
+    "require": {
+        "php": ">=7.1.3",
+        "illuminate/support": "~5.6 | 6.* | 7.*",
+        "illuminate/cache": "~5.6 | 6.* | 7.*",
+        "intervention/image": "^2.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "~1.3",
+        "php-coveralls/php-coveralls": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "codicastudio\\Avatar\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "codicastudio\\Avatar\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "4.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "codicastudio\\Avatar\\ServiceProvider"
+            ],
+            "aliases": {
+                "Avatar": "codicastudio\\Avatar\\Facade"
+            }
+        }
+    }
+}
